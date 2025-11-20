@@ -35,7 +35,6 @@ function MainNavigation() {
 
   // Write code to call incOrders() every second, and if noOfOrders is evenly divisible by 5, then update the state of this component.
   
-
   return (
     <header className={classes.header}>
       {popupToggle && <Button text1="Probably" text2="the best way" maxWidth="100px" onClickHandler={() => toggleMenuHide()} />}

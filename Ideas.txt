@@ -1,0 +1,4 @@
+1) Cookie clicker style website
+    - Giant button that increments a value
+    - Drop down menu to get auto clickers
+    - Login screen
