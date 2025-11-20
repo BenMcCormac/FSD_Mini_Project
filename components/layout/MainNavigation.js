@@ -24,13 +24,13 @@ function MainNavigation() {
   }
 
   function incOrders() {
-    noOfOrders++;
     if(noOfOrders%5 == 0){
       setNoOfOrders(noOfOrders);
     }
-    if(noOfOrders == 20){
+    if(noOfOrders >= 20){
       setNoOfOrders(20);
     }
+    noOfOrders++;
   }
 
   // Write code to call incOrders() every second, and if noOfOrders is evenly divisible by 5, then update the state of this component.
@@ -51,7 +51,7 @@ function MainNavigation() {
         </ul>
       </nav>
       <Button text1="Checkout" maxWidth="100px" onClickHandler={() => checkoutCallback()} icon={<GiShoppingCart />} />
-      <Button text1={"Orders: "+noOfOrders} maxWidth="100px" onClickHandler={() => ordersCallback(noOfOrders)} />
+      <Button text1={"Orders: "+noOfOrders} maxWidth="100px" onClickHandler={() => incOrders(noOfOrders)} />
     </header>
   );
 }
