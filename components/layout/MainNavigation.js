@@ -34,6 +34,7 @@ function MainNavigation() {
   }
 
   // Write code to call incOrders() every second, and if noOfOrders is evenly divisible by 5, then update the state of this component.
+  
 
   return (
     <header className={classes.header}>
@@ -51,7 +52,7 @@ function MainNavigation() {
         </ul>
       </nav>
       <Button text1="Checkout" maxWidth="100px" onClickHandler={() => checkoutCallback()} icon={<GiShoppingCart />} />
-      <Button text1={"Orders: "+noOfOrders} maxWidth="100px" onClickHandler={() => setInterval(incOrders, 1000)} />
+      <Button text1={"Orders: "+noOfOrders} maxWidth="100px" onClickHandler={() => ordersCallback(noOfOrders)} />
     </header>
   );
 }
