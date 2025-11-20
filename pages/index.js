@@ -3,7 +3,7 @@ import MeetupList from '../components/Sections_Home/MeetupList'
 const DUMMY_MEETUPS = [
     {
         id: 'm1',
-        image: 'https://www.planetware.com/photos-large/SEY/best-tropical-vacations-maldives.jpg',
+        image: 'https://www.shutterstock.com/image-photo/chocolate-chip-cookie-isolated-on-260nw-2487560073.jpg',
         title: 'A First Meetup',
         address: 'Some address, Galway, Ireland',
         description: 'This is a first meetup!'
